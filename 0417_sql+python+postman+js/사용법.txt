@@ -1,0 +1,38 @@
+사용법
+
+1.파일 다운 후 package.json module 설치 (npm i)
+module 종류(express,cors,mysql2,sequelize)
+(nodemon은 설치시 npm i nodemon --save-dev로 설치)
+
+2.★ mysql에서 스키마 생성 
+( mysql 코드 :CREATE SCHEMA `student` ;)
+
+
+3. npm start 
+
+4. postman 파일을 postman에 불러와서 차례대로 실행 
+(방법: postman 접속후 좌측 상단 import 클릭 -> 드래그앤 드롭)
+
+5. 서버 실행 확인후 차례대로 실행
+	학생정보등록: studentId,name,hp,email 반드시 입력
+	
+	학생점수입력(기준 학번): studentId 반드시 입력
+
+	학생 특정 조회(기준 학번): URL에 찾고자하는 studentId 입력
+	예시)localhost:9090/student/20161128
+
+	학생 정보 삭제: URL에 찾고자하는 studentId 입력
+	예시)localhost:9090/student/20161128
+	
+	학생정보,점수 수정: URL에 찾고자하는 studentId 입력
+	예시)localhost:9090/student/20161128
+
+	
+
+	 
+
+
+
+MYSQL 테이블 조회법 
+SELECT * FROM student.scores;
+SELECT * FROM student.users;
